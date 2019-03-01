@@ -25,16 +25,24 @@ function buildTable()
             var tr = "<tr>"
         }
 
+        //backtick `
+
         //var tr = "<tr>";
-        tr += "<td class='c'>" + p.id + "</td>";
-        tr += "<td>" + p.code + "</td>";
-        tr += "<td>" + p.name + "</td>";
-        tr += "<td class='r'>" + (p.price == 0 ? "Free":p.price) + "</td>";
-        tr += "<td>" + p.vendor.name + "</td>";
+        tr += `<td class='c'>${p.id}</td>`;
+        // tr += "<td class='c'>" + p.id + "</td>";
+        tr += `<td>${p.code}</td>`;
+        // tr += "<td>" + p.code + "</td>";
+        tr += `<td>${p.name}</td>`;
+        // tr += "<td>" + p.name + "</td>";
+        var price = (p.price == 0 ? "Free":p.price);
+        tr += `<td class='r'>${price}</td>`;
+        // tr += "<td class='r'>" + (p.price == 0 ? "Free":p.price) + "</td>";
+        tr += `<td>${p.vendor.name}</td>`;
+        // tr += "<td>" + p.vendor.name + "</td>";
         tr += "</tr>";
 
         tbC.innerHTML += tr;
         
-        ccR = !ccR;
+        ccR = !ccR
     }
 }
