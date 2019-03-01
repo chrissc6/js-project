@@ -1,0 +1,28 @@
+table{
+    /* if you take away the width the table will not have whitespace */
+    width: 85%;
+    border-collapse: collapse;
+    /* this margin will set a table less than 100% in the center */
+    margin: 0 auto;
+}
+table tr td{
+    border: 1.5px solid black;
+    padding: 3px;
+}
+.c{
+    text-align: center;
+}
+thead{
+    font-weight: bold;
+    background-color: aliceblue;
+}
+.nc{
+    background-color: rgb(175, 199, 223);
+}
+.r{
+    text-align: right;
+}
+body{
+    font-family: monospace;
+    font-size: 130%;
+}
